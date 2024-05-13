@@ -1,5 +1,8 @@
 #include <stdio.h>
 #include <string.h>
+int multiplicacion(articulos, precio){
+    articulos*precio
+}
 //version_3 examen practico 13-05-24//
 int main() {
     char nombre[50];
@@ -40,7 +43,7 @@ int main() {
                 if (articulos < 0 || precio < 0) {
                     printf("la cantidad y precio deben ser numeros positivos");
                 } else {                    
-                  total= articulos*precio;
+                  total= multiplicacion(articulos, precio);
                 }
                 printf("el total a pagar es de : %i ", total );     
    
