@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-//version_3 examen practio 13-05-24//
+//version_3 examen practico 13-05-24//
 int main() {
     char nombre[50];
     char contrasena[50];
@@ -15,6 +15,7 @@ int main() {
 
         if (strcmp(nombre, "root") == 0 && strcmp(contrasena, "2B10") == 0) {
             printf("Bienvenido al sistema.\n");
+           
             break;
         } else {
             intentos--;
@@ -26,6 +27,11 @@ int main() {
             }
         }
     } while (intentos > 0);
-
+     printf("ingrese la cantidad vendida");
+            scanf("%i", &articulos);
+            printf("ingrese el precio");
+            scanf("%i",&precio);
+            total-articulos*precio;
+            printf("el total a pagar es de:&i", total);
     return 0;
 }
