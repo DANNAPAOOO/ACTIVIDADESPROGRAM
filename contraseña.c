@@ -6,7 +6,7 @@ int main() {
     char contrasena[50];
     int intentos = 3;
     int articulos, precio, i, total;
-
+//estructura repetitiva 1//
     do {
         printf("Introduce tu nombre: ");
         scanf("%s", nombre);
@@ -27,6 +27,7 @@ int main() {
                 break;
             }
         }
+        //estructura repetitiva 2//
     } while (intentos > 0);
     printf("Bienvenido al sistema.\n");
             printf("\ncuando hayas terminado introduce 0 para finalizar");
