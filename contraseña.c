@@ -5,6 +5,7 @@ int main() {
     char nombre[50];
     char contrasena[50];
     int intentos = 3;
+    int articulos, precio, i, total;
 
     do {
         printf("Introduce tu nombre: ");
@@ -13,7 +14,7 @@ int main() {
         printf("Introduce tu contraseña: ");
         scanf("%s", contrasena);
 
-        if (strcmp(nombre, "root") == 0 && strcmp(contrasena, "2B10") == 0) {
+        if (strcmp(nombre, "danna") == 0 && strcmp(contrasena, "2B10") == 0) {
             printf("Bienvenido al sistema.\n");
            
             break;
@@ -27,11 +28,27 @@ int main() {
             }
         }
     } while (intentos > 0);
-     printf("ingrese la cantidad vendida");
+    printf("Bienvenido al sistema.\n");
+            printf("\ncuando hayas terminado introduce 0 para finalizar");
+            
+            printf("\ningrese la cantidad vendida : ");
             scanf("%i", &articulos);
-            printf("ingrese el precio");
-            scanf("%i",&precio);
-            total-articulos*precio;
-            printf("el total a pagar es de:&i", total);
+            while (articulos !=0) {
+              printf("ingrese el precio : ");
+              scanf("%i", &precio);
+                if (articulos < 0 || precio < 0) {
+                    printf("la cantidad y precio deben ser numeros positivos");
+                } else {                    
+                  total= articulos*precio;
+                }
+                printf("el total a pagar es de : %i ", total );     
+   
     return 0;
 }
+}
+    }
+    
+
+    
+
+  
